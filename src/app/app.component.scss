@@ -1,0 +1,143 @@
+.wrapper {
+  width: 90%;
+  margin: 20px auto;
+  padding: 10px;
+
+  .title {
+    text-align: center;
+  }
+
+  .progress-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__min-value, &__max-value {
+      margin-bottom: -8px;
+    }
+
+    &__min-value {
+      color: #009afd;
+    }
+
+    &__max-value {
+      color: #e30003;
+    }
+
+    &__gradation {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      &_color-line {
+        margin: 15px 0;
+        position: relative;
+        border: 1px solid blue;
+        width: 100%;
+        height: 10px;
+        background: linear-gradient(90deg, #009afd, #1eb727, #e30003);
+
+        .border-wrapper {
+          position: absolute;
+          top: -10px;
+          left: 0;
+          border-right: 3px solid black;
+          height: 210%;
+
+          &__left {
+            width: 33.3%;
+          }
+
+          &__right {
+            width: 66.6%;
+          }
+        }
+      }
+    }
+  }
+
+  .current-weight {
+    text-align: center;
+
+    &__number {
+      font-weight: 700;
+      font-size: 18px;
+      margin-left: 5px;
+    }
+  }
+
+  h3 {
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+
+    &__item {
+      margin: 0 10px;
+      cursor: pointer;
+
+      &_small {
+        border: 2px solid #009afd;
+        background: transparent;
+        border-radius: 8px;
+      }
+
+      &_medium {
+        border: 2px solid #1eb727;
+        background: transparent;
+        border-radius: 8px;
+      }
+
+      &_large {
+        border: 2px solid #e30003;
+        background: transparent;
+        border-radius: 8px;
+      }
+    }
+  }
+
+  .result-box {
+    width: 150px;
+    height: 100px;
+    margin: 20px auto;
+    background-color: #c4c4c4;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid #5b5a5a;
+  }
+
+}
+
+.large-animal {
+  background-image: url("https://purewows3.imgix.net/images/articles/2021_07/Big_Dog_Breeds_Bull_Mastiff.jpg?auto=format,compress&cs=strip");
+}
+
+.medium-animal {
+  background-image: url("https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2009/01/12215849/Brittany-800x534.jpg");
+  opacity: 1;
+}
+
+.small-animal {
+  background-image: url("https://www.thesprucepets.com/thmb/a0Tg4dMIBxdifVvvUB1fww2ZoPI=/735x0/cute-teacup-dog-breeds-4587847-hero-4e1112e93c68438eb0e22f505f739b74.jpg");
+  opacity: 1;
+}
+
+.weight-again-btn {
+  display: block;
+  margin: 15px auto;
+  border: 2px solid #1eb727;
+  color: #1eb727;
+  background: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 10px 20px;
+}
+
+
